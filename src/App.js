@@ -1,3 +1,5 @@
+import React from "react";
+import 'antd/dist/antd.css';
 import { Header } from "./componentes/Header";
 import { HomePage } from "./componentes/HomePage";
 import GlobalStyle from './GlobalStyle'

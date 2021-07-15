@@ -20,7 +20,7 @@ export const Header = () => {
             <a href="/">Resgate de Animais</a>
           </Menu.Item>
           <Menu.Item>
-            <Button>Login</Button>
+            <button>Login</button>
           </Menu.Item>
         </Menu>
       </Container>
