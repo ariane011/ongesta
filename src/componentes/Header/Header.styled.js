@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-img {
-  width: 72%;
-}
-  height: 100px;
-  background-color: #4296d2;
+  img {
+    width: 72%;
+  }
   ul,
   li {
     display: flex;
@@ -14,6 +12,7 @@ img {
   }
   li,
   a {
+    height: auto;
     margin: auto;
     text-decoration: none;
     color: #ffff;
@@ -32,8 +31,22 @@ img {
     border: none;
     filter: drop-shadow(0px 4px 7px rgba(50, 50, 50, 0.25));
     &:hover {
-      background-color: #FFD880;
+      background-color: #ffd880;
       transition: 0.3s;
+      color: #424242;
+    }
+    &:focus {
+      background-color: #ffd880;
+      color: #424242;
+    }
+  }
+  .ant-menu-item .ant-menu-item-only-child {
+    background-color: transparent;
+    &:focus {
+      background-color: transparent;
+    }
+    &:active {
+      background-color: transparent;
     }
   }
 `;
