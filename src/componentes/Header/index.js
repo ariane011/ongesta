@@ -10,10 +10,10 @@ export const Header = () => {
         <a href="/">
           <img src={logo} className="logo-header" alt="Logo da ONGEstá" />
         </a>
-        <Menu.Item style={{ marginRight: 40 }}>
+        <Menu.Item style={{ marginRight: 40, backgroundColor: 'transparent' }}>
           <a href="/">Guia Primeiro Pet</a>
         </Menu.Item>
-        <Menu.Item style={{ marginRight: 40 }}>
+        <Menu.Item style={{ marginRight: 40, backgroundColor: 'transparent' }}>
           <a href="/">Resgate de Animais</a>
         </Menu.Item>
         <Menu.Item style={{ backgroundColor: 'transparent' }}>

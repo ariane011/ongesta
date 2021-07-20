@@ -16,6 +16,9 @@ export const Container = styled.div`
     margin: auto;
     text-decoration: none;
     color: #ffff;
+    &:hover {
+      color: #ffff;
+    }
   }
   Button {
     background-color: #fbcb6b;
