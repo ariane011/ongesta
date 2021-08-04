@@ -1,138 +1,72 @@
-import { Button } from "antd";
 import styled from "styled-components";
 
-export const BtnPesquisar = styled(Button)`
-  font-size: 1em;
-  line-height: 1em;
-  letter-spacing: 0.04em;
-  display: inline-block;
-  &--svg {
-    position: relative;
-    height: 42px;
-    width: 190px;
-    overflow: hidden;
-    border-radius: 21px;
+export const ContainerButton = styled.div`
+
+  a {
+    background: rgba($white, 0);
+    border-bottom: 0px solid;
+    color: $white;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none;
 
     &:hover {
-      .btn--svg__circle {
-        circle {
-          -webkit-transform: scale(0);
-          -moz-transform: scale(0);
-          -ms-transform: scale(0);
-          transform: scale(0);
-        }
-      }
-
-      .btn--svg__label {
-        color: #fff;
-      }
-
-      .btn--svg__border--left,
-      .btn--svg__border--right {
-        path {
-          stroke-dasharray: 61.8204345703125 61.8204345703125;
-          stroke-dashoffset: 0;
-          -webkit-transition-delay: 0.25s;
-          -webkit-transition-duration: 0.5s;
-          -webkit-transition-timing-function: ease-in-out;
-          -webkit-transition-property: stroke-dashoffset;
-          -moz-transition-delay: 0.25s;
-          -moz-transition-duration: 0.5s;
-          -moz-transition-timing-function: ease-in-out;
-          -moz-transition-property: stroke-dashoffset;
-          -ms-transition-delay: 0.25s;
-          -ms-transition-duration: 0.5s;
-          -ms-transition-timing-function: ease-in-out;
-          -ms-transition-property: stroke-dashoffset;
-          transition-delay: 0.25s;
-          transition-duration: 0.5s;
-          transition-timing-function: ease-in-out;
-          transition-property: stroke-dashoffset;
-        }
-      }
-    }
-
-    &__label {
-      -webkit-font-smoothing: antialiased;
-      font-family: sans-serif;
-      font-weight: bold;
-      text-align: center;
-      color: black;
-      z-index: 3;
-      width: 100%;
-      -webkit-transition: color 0.5s ease-in-out;
-      -moz-transition: color 0.5s ease-in-out;
-      -ms-transition: color 0.5s ease-in-out;
-      transition: color 0.5s ease-in-out;
-    }
-
-    &__circle {
-      circle {
-        -webkit-transition: transform 0.5s ease-in-out;
-        -webkit-transform: scale(1.1);
-        -webkit-transform-origin: 50% 50%;
-        -moz-transition: transform 0.5s ease-in-out;
-        -moz-transform: scale(1.1);
-        -moz-transform-origin: 50% 50%;
-        -ms-transition: transform 0.5s ease-in-out;
-        -ms-transform: scale(1.1);
-        -ms-transform-origin: 50% 50%;
-        transition: transform 0.5s ease-in-out;
-        transform: scale(1.1);
-        transform-origin: 50% 50%;
-      }
-    }
-
-    &__border {
-      &--left,
-      &--right {
-        path {
-          stroke-dasharray: 61.8204345703125 61.8204345703125;
-          -webkit-transition-duration: 0s;
-          -webkit-transition-timing-function: ease-in-out;
-          -webkit-transition-property: stroke-dashoffset;
-          -webkit-transition-delay: 0.5s;
-          -moz-transition-duration: 0s;
-          -moz-transition-timing-function: ease-in-out;
-          -moz-transition-property: stroke-dashoffset;
-          -moz-transition-delay: 0.5s;
-          -ms-transition-duration: 0s;
-          -ms-transition-timing-function: ease-in-out;
-          -ms-transition-property: stroke-dashoffset;
-          -ms-transition-delay: 0.5s;
-          transition-duration: 0s;
-          transition-timing-function: ease-in-out;
-          transition-property: stroke-dashoffset;
-          transition-delay: 0.5s;
-        }
-      }
-
-      &--left {
-        path {
-          stroke-dashoffset: -61.8204345703125;
-        }
-      }
-
-      &--right {
-        path {
-          stroke-dashoffset: 61.8204345703125;
-        }
-      }
-    }
-
-    svg,
-    &__label {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -webkit-transform-origin: 50% 50%;
-      -moz-transform: translate(-50%, -50%);
-      -moz-transform-origin: 50% 50%;
-      -ms-transform: translate(-50%, -50%);
-      -ms-transform-origin: 50% 50%;
-      transform: translate(-50%, -50%);
-      transform-origin: 50% 50%;
+      background: rgba($white, 1);
+      color: $red;
     }
   }
+}
+
+.btn {
+  color: #424242;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  line-height: 45px;
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  background-color: #FBCB6B;
+  @media(min-width: 600px) {
+    margin: 0 1em 2em;
+  }
+  &:hover { text-decoration: none; }
+}
+
+.btn-1 {
+  height: 56px;
+  width: 500px;
+  svg {
+    height: 56px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #2c2d2c;
+    stroke-width: 2.5;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+.btn-1:hover {
+  background: rgba($red, 0);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  rect {
+    stroke-width: 3.5;
+    stroke-dasharray: 200, 690;
+    stroke-dashoffset: 200;
+    transition: all 1.35s cubic-bezier(0.5, 1.3, 0, 1);
+  }
+}
 `;
