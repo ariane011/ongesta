@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import { Container } from "./HomePage.styled";
 import { BuscaOngs } from "../Form/BuscaOngs";
+import { Sobre } from "../Sobre";
 
 export const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ export const HomePage = () => {
 
             <h3>Para continuarmos, precisamos saber onde procurar.</h3>
             <BuscaOngs />
+            <Sobre />
           </div>
         </Container>
       </Col>

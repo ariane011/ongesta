@@ -38,14 +38,16 @@ export const ContainerButton = styled.div`
 }
 
 .btn-1 {
-  height: 56px;
+  height: 46px;
   width: 500px;
+  border-radius: 10px;
   svg {
-    height: 56px;
+    height: 46px;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+    border-radius: 8px;
   }
 
   rect {
@@ -63,7 +65,7 @@ export const ContainerButton = styled.div`
   letter-spacing: 0.5px;
 
   rect {
-    stroke-width: 3.5;
+    stroke-width: 2.5;
     stroke-dasharray: 200, 690;
     stroke-dashoffset: 200;
     transition: all 1.35s cubic-bezier(0.5, 1.3, 0, 1);

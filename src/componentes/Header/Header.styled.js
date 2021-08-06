@@ -30,9 +30,9 @@ export const Container = styled.span`
     line-height: 17px;
     text-align: center;
     color: #424242;
-    border-radius: 5px;
     border: none;
     filter: drop-shadow(0px 4px 7px rgba(50, 50, 50, 0.25));
+    border-radius: 10px;
     &:hover {
       background-color: #ffd880;
       transition: 0.3s;
@@ -44,6 +44,7 @@ export const Container = styled.span`
     }
   }
   .ant-menu-item .ant-menu-item-only-child {
+    height: 0;
     background-color: transparent;
     &:focus {
       background-color: transparent;
