@@ -11,9 +11,9 @@ export const Container = styled.div`
     font-size: 18px;
     line-height: 22px;
     color: #424242;
-    margin: 25px 20px 25px 35px;
+    margin: 20px 20px 25px 45px;
     @media screen and (max-width: 600px) {
-      margin: 25px 20px 25px 20px;
+      margin: 20px 20px 25px 20px;
     }
   }
   h3 {

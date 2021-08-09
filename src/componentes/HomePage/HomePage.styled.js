@@ -3,7 +3,7 @@ import imgPrincipal from "../../assets/images/slide-001.jpg";
 
 export const Container = styled.div`
   .bg-image {
-    width: 100vw;
+    width: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(${imgPrincipal});
     min-height: 50vh;
