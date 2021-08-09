@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Select } from "antd";
+import { Button, Row, Select } from "antd";
 import { ContainerButton } from "./style.styled";
 
 const { Option } = Select;
@@ -35,12 +35,7 @@ export const BuscaOngs = () => {
       </Row>
       <Row justify="center">
         <ContainerButton>
-          <a href="/" class="btn btn-1">
-            <svg>
-              <rect x="0" y="0" fill="none" width="100%" height="100%" />
-            </svg>
-            Procurar ONG
-          </a>
+          <Button>Procurar ONG</Button>
         </ContainerButton>
       </Row>
     </div>

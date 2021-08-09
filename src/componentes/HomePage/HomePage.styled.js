@@ -33,14 +33,14 @@ export const Container = styled.div`
     font-weight: 500;
     font-size: 32px;
     line-height: 39px;
-    width: 970px;
+    width: auto;
     margin: auto;
   }
   p {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 963px;
+    width: auto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -54,13 +54,13 @@ export const Container = styled.div`
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 770px;
+    width: auto;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
     color: #424242;
-    margin: 60px auto ;
+    margin: 60px auto;
   }
 `;

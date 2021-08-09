@@ -8,9 +8,9 @@ export const Sobre = () => {
   return (
     <Container>
       <Row>
-        <Col xl={24}>
+        <Col xs={24} md={24} xl={24}>
           <Row>
-            <Col xs={12} xl={12}>
+            <Col xs={24} md={12} xl={12}>
               <div className="title-doacoes">
                 <div className="icone-coracao">
                   <img src={IconeCoracao} alt="Coração" />
@@ -32,13 +32,9 @@ export const Sobre = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={12} xl={12}>
+            <Col xs={24} md={12} xl={12}>
               <div className="img-dog-caixa">
-                <img
-                  src={ImageDogCaixa}
-                  alt="Cachorro dentro da caixa"
-                  style={{ width: 370, borderRadius: 15, marginLeft: 250 }}
-                />
+                <img src={ImageDogCaixa} alt="Cachorro dentro da caixa" />
               </div>
             </Col>
           </Row>
